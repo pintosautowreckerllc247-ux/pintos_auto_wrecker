@@ -31,15 +31,9 @@ footer{border-top:1px solid var(--line);padding:30px 18px;text-align:center;colo
 
 /* Services section */
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:20px}
-.service-card{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:0;min-height:390px;display:flex;flex-direction:column;justify-content:flex-end}
-.service-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92) 5%,rgba(0,0,0,.48) 55%,rgba(0,0,0,.05) 100%);pointer-events:none}
-.service-card.junk{background:url('junk-cars.jpg') center/cover no-repeat}
-.service-card.tow{background:url('towing.jpg') center/cover no-repeat}
-.service-card.parts{background:linear-gradient(135deg,#18181b,#0a0a0c)}
-.service-content{position:relative;z-index:1;padding:28px}
-.service-card h3{font-size:28px;margin:0 0 10px;text-transform:uppercase}.service-card h3 .red{display:block}
-.service-card p{margin:0 0 18px;color:#eee}
-.service-icon{font-size:42px;margin-bottom:10px}
+.service-card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--red);border-radius:14px;padding:28px}
+.service-card h3{font-size:27px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.2px}
+.service-card p{margin:0 0 18px}
 </style>
 </head>
 <body>
@@ -59,27 +53,20 @@ footer{border-top:1px solid var(--line);padding:30px 18px;text-align:center;colo
 <h2>Our Services</h2>
 <p class="sub">Pinto's Auto Wrecker LLC can help with used auto parts, towing, and junk vehicles.</p>
 <div class="services">
-  <div class="service-card parts">
-    <div class="service-content">
-      <div class="service-icon">🔧</div>
-      <h3>Used <span class="red">Auto Parts</span></h3>
-      <p>Search our inventory for used engines, transmissions, body parts, electronics and more. Reserve available parts online with no online payment.</p>
-      <a class="btn redbtn" href="#inventory">Search Parts</a>
-    </div>
+  <div class="service-card">
+<h3>Used Auto Parts</h3>
+    <p>Search our inventory for used engines, transmissions, body parts, electronics and more. Reserve available parts online with no online payment.</p>
+    <a class="btn redbtn" href="#inventory">Search Parts</a>
   </div>
-  <div class="service-card junk">
-    <div class="service-content">
-      <h3>We Buy <span class="red">Junk Cars</span></h3>
-      <p>Have an unwanted or junk vehicle? We buy cars in many conditions. Contact us for a fast quote.</p>
-      <div class="buttons"><a class="btn redbtn" href="tel:16615857411">Get a Quote</a><a class="btn darkbtn" href="sms:16615857411">Text Us</a></div>
-    </div>
+  <div class="service-card">
+<h3>We Buy Junk Cars</h3>
+    <p>Have an unwanted or junk vehicle? Contact us with the year, make, model and your location to ask about selling your vehicle.</p>
+    <div class="buttons"><a class="btn redbtn" href="tel:16615857411">Get a Quote</a><a class="btn darkbtn" href="sms:16615857411">Text Us</a></div>
   </div>
-  <div class="service-card tow">
-    <div class="service-content">
-      <h3>Towing <span class="red">Services</span></h3>
-      <p>Need a tow? Call or text Pinto's Auto Wrecker LLC for towing availability, pricing and pickup details.</p>
-      <div class="buttons"><a class="btn redbtn" href="tel:16615857411">Request Towing</a><a class="btn darkbtn" href="sms:16615857411">Text Us</a></div>
-    </div>
+  <div class="service-card">
+<h3>Towing Services</h3>
+    <p>Need a tow? Call or text Pinto's Auto Wrecker LLC for towing availability, pricing and pickup details.</p>
+    <div class="buttons"><a class="btn redbtn" href="tel:16615857411">Request Towing</a><a class="btn darkbtn" href="sms:16615857411">Text Us</a></div>
   </div>
 </div>
 </section>
